@@ -8,156 +8,395 @@
     <link rel="icon" type="imagem/png" href="/img/transtitle.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./estilo.css">
-    <title>Multirão limpeza</title>
+    <title>Multirão Limpeza - Serviços de Limpeza Profissional</title>
 </head>
 
 <body>
-
-    <div id="caixa-principal">
-        
-        <div id="caixa-pri">
-          
-            <img id="img-um" src="./img/limpeza-mutiraa.png" alt="Limpeza">
-        
-            <ul id="ul-lista">
-                <li class="lis"><a class="lista" href="#text">Quem samos</a></li>
-                <li class="lis"><a class="lista" href="#titulo">Serviços</a></li>
-                <li class="lis"><a class="lista" href="#caixa-baixo">Fala conosco</a></li>
-
-            </ul>
-        </div>
-
-
-        <div id="caixa-dois">
-            <h2>Nossos Serviços</h2>
-            <p id="paragrafo">
-                Somos uma empresa sólida e de confiança, que com muito trabalho e
-                dedicação está crescendo cada dia mais, para atender melhor nossos clientes. <br>
-                Buscamos oferecer uma solução completa para sua necessidade,
-                reunindo as melhores práticas e profissionais
-                para te atender.
-            </p>
-        </div>
-
-        <img id="img-dois" src="./img/limpze.png" alt="Limpeza">
-
-
-
-        <div class="div-seg">
-
-            <h1 id="titulo">Serviços</h1>
-
-            <div class="conteiner-um">
-                <h4 class="titulo">Limpeza & Conservação</h4>
-                <img id="img-lista-pri" src="./img/modelo-faxina.png" alt="limpeza e Conservação">
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <img class="logo" src="./img/limpeza-mutiraa.png" alt="Multirão Limpeza">
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a class="nav-link" href="#about">Sobre Nós</a></li>
+                        <li><a class="nav-link" href="#services">Serviços</a></li>
+                        <li><a class="nav-link" href="#contact">Contato</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span>☰</span>
+                </button>
+                <div class="mobile-menu" id="mobile-menu">
+                    <ul class="mobile-nav-list">
+                        <li><a class="mobile-nav-link" href="#about">Sobre Nós</a></li>
+                        <li><a class="mobile-nav-link" href="#services">Serviços</a></li>
+                        <li><a class="mobile-nav-link" href="#contact">Contato</a></li>
+                    </ul>
+                </div>
             </div>
+        </header>
 
 
-            <div id="conteiner-dois">
-                <h4 class="titulo">Higienização de Cxs d’Água</h4>
-                <img id="img-lista-dois" src="./img/img-caixadagua.png" alt="d’Água">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-background">
+                <div class="hero-particles"></div>
             </div>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Serviços de Limpeza
 
-
-            <div id="conteiner-tres">
-                <h4 class="titulo  titu-tress">Tratamento de Piscinas</h4>
-                <img id="img-lista-tres" src="./img/picineiro.png" alt="Piscinas">
+                    </h1>
+                    <p class="hero-description">
+                        Somos uma empresa sólida e de confiança, que com muito trabalho e
+                        dedicação está crescendo cada dia mais, para atender melhor nossos clientes.
+                        Buscamos oferecer uma solução completa para sua necessidade,
+                        reunindo as melhores práticas e profissionais para te atender.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#services" class="btn btn-primary">Nossos Serviços</a>
+                        <a href="#contact" class="btn btn-secondary">Solicitar Orçamento</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Clientes Satisfeitos</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Anos de Experiência</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Atendimento</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="./img/limpze.png" alt="Serviços de Limpeza">
+                        <div class="floating-elements">
+                            <div class="floating-icon">🧽</div>
+                            <div class="floating-icon">✨</div>
+                            <div class="floating-icon">💧</div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
 
-            <div id="conteiner-quarto">
-                <h4 class="titulo-quarto  titu-quar">Jardinagem</h4>
-                <img id="img-lista-quarto" src="./img/jardineiro.png" alt="jardineiro">
+
+        <!-- Services Section -->
+        <section id="services" class="services">
+            <div class="services-container">
+                <div class="section-header">
+                    <h2 class="services-title">Nossos Serviços</h2>
+                    <p class="services-subtitle">Soluções completas de limpeza para todos os tipos de ambientes</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="./img/modelo-faxina.png" alt="Limpeza e Conservação">
+                            <div class="service-overlay">
+                                <span class="service-icon">🧽</span>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Limpeza & Conservação</h3>
+                            <p class="service-description">Serviços especializados de limpeza residencial e comercial
+                                com produtos de alta qualidade.</p>
+                            <ul class="service-features">
+                                <li>Limpeza residencial</li>
+                                <li>Limpeza comercial</li>
+                                <li>Conservação de pisos</li>
+                            </ul>
+                            <a href="#contact" class="service-btn">Solicitar Orçamento</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="./img/img-caixadagua.png" alt="Higienização de Caixas d'Água">
+                            <div class="service-overlay">
+                                <span class="service-icon">💧</span>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Higienização de Caixas d'Água</h3>
+                            <p class="service-description">Higienização completa e desinfecção de reservatórios de água
+                                potável.</p>
+                            <ul class="service-features">
+                                <li>Desinfecção completa</li>
+                                <li>Certificado de higienização</li>
+                                <li>Produtos certificados</li>
+                            </ul>
+                            <a href="#contact" class="service-btn">Solicitar Orçamento</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="./img/picineiro.png" alt="Tratamento de Piscinas">
+                            <div class="service-overlay">
+                                <span class="service-icon">🏊</span>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Tratamento de Piscinas</h3>
+                            <p class="service-description">Manutenção e tratamento completo de piscinas residenciais e
+                                comerciais.</p>
+                            <ul class="service-features">
+                                <li>Tratamento químico</li>
+                                <li>Limpeza de filtros</li>
+                                <li>Manutenção preventiva</li>
+                            </ul>
+                            <a href="#contact" class="service-btn">Solicitar Orçamento</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="./img/jardineiro.png" alt="Jardinagem">
+                            <div class="service-overlay">
+                                <span class="service-icon">🌱</span>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Jardinagem</h3>
+                            <p class="service-description">Cuidados especializados com jardins e áreas verdes
+                                residenciais e comerciais.</p>
+                            <ul class="service-features">
+                                <li>Poda de plantas</li>
+                                <li>Adubação</li>
+                                <li>Controle de pragas</li>
+                            </ul>
+                            <a href="#contact" class="service-btn">Solicitar Orçamento</a>
+                        </div>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="./img/limpz-geral.png" alt="Limpeza Geral">
+                            <div class="service-overlay">
+                                <span class="service-icon">✨</span>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <h3 class="service-title">Limpeza Geral</h3>
+                            <p class="service-description">Serviços de limpeza completa para todos os tipos de ambientes
+                                e necessidades.</p>
+                            <ul class="service-features">
+                                <li>Limpeza pós-obra</li>
+                                <li>Limpeza de eventos</li>
+                                <li>Limpeza industrial</li>
+                            </ul>
+                            <a href="#contact" class="service-btn">Solicitar Orçamento</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div id="conteiner-quinto">
-                <h4 class="titulo-quinto  titu-qui">Limpeza Geral</h4>
-                <img id="img-lista-quinto" src="./img/limpz-geral.png" alt="Geral">
-            </div>
+        </section>
 
 
-
-        </div>
-
-
-        <div>
-            <h3 id="text">Sobre nós</h3>
-            <p id="para-limp">Multirão de limpeza tem disponibiliza serviços para diversos espaços, dando resposta às
-                necessidades de: empresas, condomínios, industria, hospitais, obras, reformas, comércios, residências e
-                outros. O grande sucesso da empresa é pautado pelo compromisso no atendimento aos requisitos dos
-                clientes
-                externos e a aplicação de amor, dedicação, excelência e na busca de superar as expectativas dos
-                clientes.
-                Gestão e terceirização de serviços técnicos, operacionais e administrativos.</p>
-        </div>
-
-        <div id="caixona">
-            <div id="resp">
-
-                <h5>RESPEITO</h5>
-                <p class="tres-paragrafo">Zelamos pelo respeito em todo procedimento, desde o contato a finalização do
-                    serviço, mantendo a boa
-                    conduta
-                    entre nossa equipe e nossos clientes.
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="about-container">
+                <h2 class="about-title">Sobre Nós</h2>
+                <p class="about-description">
+                    Multirão de limpeza disponibiliza serviços para diversos espaços, dando resposta às
+                    necessidades de: empresas, condomínios, indústria, hospitais, obras, reformas, comércios,
+                    residências e
+                    outros. O grande sucesso da empresa é pautado pelo compromisso no atendimento aos requisitos dos
+                    clientes externos e a aplicação de amor, dedicação, excelência e na busca de superar as expectativas
+                    dos
+                    clientes. Gestão e terceirização de serviços técnicos, operacionais e administrativos.
                 </p>
             </div>
-            <div id="quali">
-                <h5 id="qualidades">QUALIDADE</h5>
-                <p class="tres-paragra">Nosso maior objetivo é a satisfação para nossos clientes. Por isso contamos com
-                    uma
-                    equipe especializada
-                    e
-                    utilizamos equipamentos modernos em nossos serviços.
-                </p>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="testimonials-container">
+                <div class="section-header">
+                    <h2 class="testimonials-title">O que nossos clientes dizem</h2>
+                    <p class="testimonials-subtitle">Depoimentos de quem confia em nossos serviços</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial-text">
+                                "Excelente serviço! A equipe é muito profissional e caprichosa.
+                                Minha casa ficou impecável. Recomendo para todos!"
+                            </p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">👩</div>
+                            <div class="author-info">
+                                <h4 class="author-name">Maria Silva</h4>
+                                <p class="author-location">Belo Horizonte, MG</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial-text">
+                                "Serviço de higienização de caixa d'água muito bem feito.
+                                Profissionais qualificados e preço justo. Voltarei a contratar!"
+                            </p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">👨</div>
+                            <div class="author-info">
+                                <h4 class="author-name">João Santos</h4>
+                                <p class="author-location">Contagem, MG</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p class="testimonial-text">
+                                "Contratamos para limpeza do nosso escritório.
+                                Pontualidade, qualidade e preço excelente. Super recomendo!"
+                            </p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">👩‍💼</div>
+                            <div class="author-info">
+                                <h4 class="author-name">Ana Costa</h4>
+                                <p class="author-location">Belo Horizonte, MG</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="tres-paragraf">
-                <h5 id="preço">PREÇO BAIXO</h5>
-                <p id="preç">
-                    Para melhorar a experiência de nossos clientes, oferecemos preços super acessíveis e justos em cada
-                    serviço.
-                </p>
+        <!-- Values Section -->
+        <section class="values">
+            <div class="values-container">
+                <div class="value-card">
+                    <h3 class="value-title">RESPEITO</h3>
+                    <p class="value-description">
+                        Zelamos pelo respeito em todo procedimento, desde o contato a finalização do
+                        serviço, mantendo a boa conduta entre nossa equipe e nossos clientes.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <h3 class="value-title">QUALIDADE</h3>
+                    <p class="value-description">
+                        Nosso maior objetivo é a satisfação para nossos clientes. Por isso contamos com
+                        uma equipe especializada e utilizamos equipamentos modernos em nossos serviços.
+                    </p>
+                </div>
+                <div class="value-card">
+                    <h3 class="value-title">PREÇO JUSTO</h3>
+                    <p class="value-description">
+                        Para melhorar a experiência de nossos clientes, oferecemos preços super acessíveis e justos em
+                        cada
+                        serviço.
+                    </p>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <form action="https://formsubmit.co/wcmultiservicos@gmail.com" method="POST" id="informaçao">
-            <h1 id="titulo-contato">Entre em contato</h1>
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="cta-container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Pronto para ter sua casa ou empresa limpa?</h2>
+                    <p class="cta-description">
+                        Solicite um orçamento gratuito e sem compromisso.
+                        Nossa equipe está pronta para atender você!
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="https://api.whatsapp.com/send/?phone=5531993064490&text=Ol%C3%A1%2C+gostaria+de+solicitar+um+or%C3%A7amento&type=phone_number&app_absent=0"
+                            class="btn btn-whatsapp" target="_blank">
+                            <span class="btn-icon">📱</span>
+                            WhatsApp
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <span class="btn-icon">✉️</span>
+                            Formulário
+                        </a>
+                    </div>
+                </div>
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <span class="feature-icon">✅</span>
+                        <span class="feature-text">Orçamento Gratuito</span>
+                    </div>
+                    <div class="cta-feature">
+                        <span class="feature-icon">⚡</span>
+                        <span class="feature-text">Resposta Rápida</span>
+                    </div>
+                    <div class="cta-feature">
+                        <span class="feature-icon">🛡️</span>
+                        <span class="feature-text">Garantia Total</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <label class="intens">
-                Nome:
-                <input class="in-put" type="text" name="Nome" placeholder="Digita seu nome " required>
-            </label>
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="contact-container">
+                <h2 class="contact-title">Entre em Contato</h2>
+                <form class="contact-form" action="https://formsubmit.co/wcmultiservicos@gmail.com" method="POST">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="Nome" placeholder="Digite seu nome" required>
+                    </div>
 
-            <label class="intens">
-                Telefone:
-                <input class="in-put" type="text" name="Telefone" placeholder="Digita seu telefone " required>
-            </label>
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="Telefone" placeholder="Digite seu telefone" required>
+                    </div>
 
-            <label class="intens">
-                E-mail:
-                <input class="in-put" type="text" name="E-mail" placeholder="Digita seu email " required>
-            </label>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="E-mail" placeholder="Digite seu email" required>
+                    </div>
 
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="Dúvida" placeholder="Digite sua mensagem" rows="4"
+                            required></textarea>
+                    </div>
 
-            <label class="intens">
-                Fale conosco:
-                <input class="in-put" type="text" name="Dúvida" placeholder="Digita sua dúvida " required>
-            </label>
+                    <button type="submit" class="submit-btn">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
 
-            <button id="button-pri" type="submit">Enviar</button>
-        </form>
-
-
-        <div id="caixa-baixo">
-            <a class="links-pri"
-                href="https://api.whatsapp.com/send/?phone=5531993064490&text=Ol%C3%A1%2C+tudo+bem%3F&type=phone_number&app_absent=0">Telefone</a>
-            <a class="links-seg" href="mailto:wcmultiservicos@gmail.com?
-        subject= subject text">Email</a>
-            <a class="links-tri" href="https://goo.gl/maps/DeaCEKsgvzb21hLn6">Endereço</a>
-        </div>
-
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <a class="footer-link"
+                    href="https://api.whatsapp.com/send/?phone=5531993064490&text=Ol%C3%A1%2C+tudo+bem%3F&type=phone_number&app_absent=0">
+                    <span class="footer-icon">📞</span>
+                    WhatsApp
+                </a>
+                <a class="footer-link" href="mailto:wcmultiservicos@gmail.com">
+                    <span class="footer-icon">✉️</span>
+                    Email
+                </a>
+                <a class="footer-link" href="https://goo.gl/maps/DeaCEKsgvzb21hLn6">
+                    <span class="footer-icon">📍</span>
+                    Endereço
+                </a>
+            </div>
+        </footer>
     </div>
 
 
